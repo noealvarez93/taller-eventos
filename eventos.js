@@ -1,6 +1,7 @@
 const saludarButton = document.getElementById("saludarButton");
 
 saludarButton.addEventListener("click", function(event) {
+    event.stopPropagation(); 
     alert("Hola!");
 });
 
